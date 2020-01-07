@@ -9,3 +9,7 @@
   * a model is built with one neuron to simulate the linear relation ship between test ```xs``` and ```ys``` values.
   * the asynchronous function is called and post completion predict function is called to get the ml model prediction.
   * now the entire operation happens in background and since alert is given to output the predict output that is only indication that training has completed.
+  
+* in the iris_classifier.html
+ * fitDataset is used to feed the csv dataset into the model.
+ * one hot encoding is kind of not scalable code :(
