@@ -6,4 +6,6 @@
   * a script is written in the html file iteself
     * ```<script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest">``` : will interpret the tf js code
   * a asynchronous function is written which takes model as input and call the model.fit to said number of epochs
-  
+  * a model is built with one neuron to simulate the linear relation ship between test ```xs``` and ```ys``` values.
+  * the asynchronous function is called and post completion predict function is called to get the ml model prediction.
+  * now the entire operation happens in background and since alert is given to output the predict output that is only indication that training has completed.
