@@ -26,3 +26,4 @@
             }).batch(10);```
             
    Leads to :  ```Uncaught (in promise) TypeError: Cannot convert undefined or null to object``` error
+      * Root cause: the error indicated null object which hinted the trainingData to be null. Hence the last operation to load the variable was revisited and found there was a spelling mistake in ```columnConfigs```.
