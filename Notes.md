@@ -18,3 +18,11 @@
   
 * in the class exercise:
   * ```The provided Dataset instead generates [object Object]```: is the error if you dont have the map function to it
+    ```tfjs@latest:2 Uncaught (in promise) Error: A Dataset iterator for fitDataset() is expected to generate objects of the form `{xs: xVal, ys: yVal}`, where the two values may be `tf.Tensor`, an array of Tensors, or a map of string to Tensor.  The provided Dataset instead generates [object Object]```
+    
+  * However, if a simple map is provided, it is evaluates to null
+   ```const convertedTrainingData = trainingData.map(({xs, ys}) => {
+                return { xs : Object.values(xs), ys : Object.values(ys)};
+            }).batch(10);```
+            
+   Leads to :  ```Uncaught (in promise) TypeError: Cannot convert undefined or null to object``` error
