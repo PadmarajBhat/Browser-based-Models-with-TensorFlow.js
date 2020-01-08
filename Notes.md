@@ -15,3 +15,6 @@
  * one hot encoding is kind of not scalable code :(
  * how did the copy paste code return different predicted value as that of hand written code ? 
   * Ans: Code compare utility helped to point out the issue. It was spelling mistake in the label encoding. It should have been "setosa" , I had "sentosa".
+  
+* in the class exercise:
+  * ```The provided Dataset instead generates [object Object]```: is the error if you dont have the map function to it
