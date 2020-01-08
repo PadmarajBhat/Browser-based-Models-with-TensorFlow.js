@@ -14,3 +14,4 @@
  * fitDataset is used to feed the csv dataset into the model.
  * one hot encoding is kind of not scalable code :(
  * how did the copy paste code return different predicted value as that of hand written code ? 
+  * Ans: Code compare utility helped to point out the issue. It was spelling mistake in the label encoding. It should have been "setosa" , I had "sentosa".
