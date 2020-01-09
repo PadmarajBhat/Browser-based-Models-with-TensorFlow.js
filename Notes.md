@@ -27,3 +27,8 @@
             
    Leads to :  ```Uncaught (in promise) TypeError: Cannot convert undefined or null to object``` error
       * Root cause: the error indicated null object which hinted the trainingData to be null. Hence the last operation to load the variable was revisited and found there was a spelling mistake in ```columnConfigs```.
+
+# Week 2
+* in this week the course focusses on tf.viz and tf.tidy from the tensorflow perspective.
+* there is a lab where front end captures the user hand writing and classifies it as respective number.
+* there is also an awesome dynamic plot indicating the status of the training.
