@@ -32,3 +32,12 @@
 * in this week the course focusses on tf.viz and tf.tidy from the tensorflow perspective.
 * there is a lab where front end captures the user hand writing and classifies it as respective number.
 * there is also an awesome dynamic plot indicating the status of the training.
+* to decode the code:
+  * there is a load of new concepts from the front end perspective.
+    * like angular or may be it is best practice at js to have the class and its method seperate file and later it is imported in the area where it is used.
+    * lot of ```var``` are defined first ; kind of global variables declaration. As the data type is var it can be anything in the future.
+    * there are also mix of async and regular functions.
+      * async functions are called with ```await``` before to it.
+      * one without async would be called as a regular function call.
+      
+    
