@@ -45,4 +45,8 @@
    * it has maximize and hide button
    * it has capability to have a running plot display for tracking training progress 
       
+      
+* tf.tidy(): https://js.tensorflow.org/api/0.11.7/#tidy
+  * it takes function as argument and deletes all the intermediates variables post execution of the function except return variable.
+  * a general practice to avoid memory leak.  
     
