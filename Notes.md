@@ -40,5 +40,9 @@
       * async functions are called with ```await``` before to it.
          * async function returns **Promise** objects which can have fulfilled, rejected or pending: https://medium.com/javascript-scene/master-the-javascript-interview-what-is-a-promise-27fc71e77261
       * one without async would be called as a regular function call.
+* tf-viz : https://github.com/tensorflow/tfjs/tree/master/tfjs-vis
+   * it has some components built focussed more on plotting the training outcomes and model (keras) layers.
+   * it has maximize and hide button
+   * it has capability to have a running plot display for tracking training progress 
       
     
