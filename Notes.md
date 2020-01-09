@@ -38,6 +38,7 @@
     * lot of ```var``` are defined first ; kind of global variables declaration. As the data type is var it can be anything in the future.
     * there are also mix of async and regular functions.
       * async functions are called with ```await``` before to it.
+         * async function returns **Promise** objects which can have fulfilled, rejected or pending: https://medium.com/javascript-scene/master-the-javascript-interview-what-is-a-promise-27fc71e77261
       * one without async would be called as a regular function call.
       
     
