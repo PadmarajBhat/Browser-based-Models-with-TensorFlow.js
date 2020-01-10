@@ -49,4 +49,9 @@
 * tf.tidy(): https://js.tensorflow.org/api/0.11.7/#tidy
   * it takes function as argument and deletes all the intermediates variables post execution of the function except return variable.
   * a general practice to avoid memory leak.  
-    
+* draw function
+  * rawImage.src = canvas.toDataURL('image/png');  // from canvs html tag
+  * <img id="canvasimg" style="position:absolute;top:10%;left:52%;width=280;height=280;display:none;">
+     * both statements results in saving of the drawn image at html
+  * rawImage = document.getElementById('canvasimg');
+     * saves the html <img> to a variable.
