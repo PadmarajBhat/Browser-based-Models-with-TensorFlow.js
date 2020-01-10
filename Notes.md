@@ -55,3 +55,16 @@
      * both statements results in saving of the drawn image at html
   * rawImage = document.getElementById('canvasimg');
      * saves the html <img> to a variable.
+* ```
+var raw = tf.browser.fromPixels(rawImage,1);
+    var resized = tf.image.resizeBilinear(raw, [28,28]);
+    var tensor = resized.expandDims(0);
+    
+    var prediction = model.predict(tensor);
+    var pIndex = tf.argMax(prediction, 1).dataSync();
+```
+    * first raw image is converted to tensor
+    * resized to 28x28 ; canvas image will be of 280x280 dimension image and tf model takes 28x28
+    * conv2d layer requires 3d input and hence **expandDims** does the magic for us.
+    * followed by prediction and argmax for label assignment.
+    
