@@ -67,4 +67,8 @@ var raw = tf.browser.fromPixels(rawImage,1);
     * resized to 28x28 ; canvas image will be of 280x280 dimension image and tf model takes 28x28
     * conv2d layer requires 3d input and hence **expandDims** does the magic for us.
     * followed by prediction and argmax for label assignment.
-    
+# Week 3
+* in this week, the course focusses on using pretrained models in js
+* it also talks about converting a model built on python to json format and load the same in js
+* it is because the model building is usually done in data center (where the data resides), this week is the focus on pre built model
+
