@@ -86,3 +86,4 @@ var raw = tf.browser.fromPixels(rawImage,1);
   
   * mobilenet: world famous shrinked image classifer for 1000 labels.
      * again simple CDN includes the model to browser : <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/mobilenet@1.0.0"> </script> 
+     * a static image is loaded too the browser and that is sent to the loaded pretrained model to classify
