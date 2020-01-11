@@ -72,3 +72,14 @@ var raw = tf.browser.fromPixels(rawImage,1);
 * it also talks about converting a model built on python to json format and load the same in js
 * it is because the model building is usually done in data center (where the data resides), this week is the focus on pre built model
 
+* 2 pretrained models:
+  * toxicity model : identifies the toxicity in a sentence. provides the probability for ( insult, identity attack, obsene etc)
+    * ```<script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest"></script>
+<script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/toxicity"></script>```
+        * first script includes the tfjs capability to browser
+        * second script includes the toxicity model into the browser scope. However, it has to be loaded later.
+        * https://github.com/lmoroney/dlaicourse/blob/master/TensorFlow%20Deployment/Course%201%20-%20TensorFlow-JS/Week%203/Examples/toxicity.html
+             * toxicity.load(threshold) : loads the model in the browser scope with predefined threshold. Now this threshold is toxicity model specific and need not have to be there for other models.
+             * then ( body) emphasises on the completion of model load .
+             * model is the result of load and it is used to *classify* sentence
+             * *prediction* is a json format output which is later parsed for displaying the output 
