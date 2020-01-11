@@ -83,3 +83,6 @@ var raw = tf.browser.fromPixels(rawImage,1);
              * then ( body) emphasises on the completion of model load .
              * model is the result of load and it is used to *classify* sentence
              * *prediction* is a json format output which is later parsed for displaying the output 
+  
+  * mobilenet: world famous shrinked image classifer for 1000 labels.
+     * again simple CDN includes the model to browser : <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/mobilenet@1.0.0"> </script> 
