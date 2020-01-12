@@ -100,3 +100,6 @@ var raw = tf.browser.fromPixels(rawImage,1);
       const model = await tf.loadGraphModel(MODEL_URL);
   ```
   
+* last part this week is amazing, there is web cam which collects the data at real time and uses the same for modelling.
+* rock paper sizler is given in as an example and in the exercise we are asked to include 2 more sets lizard and spock.
+* unfortunately, my pc is letting me install install tensorflow js for some security concerns.
