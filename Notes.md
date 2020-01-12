@@ -93,3 +93,10 @@ var raw = tf.browser.fromPixels(rawImage,1);
   * post that, using keras, model.save() is used to save in the local directory
   * ```tensorflowjs_converter --input_format=keras {saved_model_path} ./``` is used to convert the model to json format in the current directory
   * this will create a folder with multiple files in it. This has to be moved to the directly where the html file loads it.
+  * you have option of optimization as indicated : https://github.com/tensorflow/tfjs/tree/master/tfjs-converter#step-1-converting-a-tensorflow-savedmodel-tensorflow-hub-module-keras-hdf5-or-tfkeras-savedmodel-to-a-web-friendly-format
+  
+* loading the json in browser:
+  ``` const MODEL_URL = 'https://.../mobilenet/model.json';
+      const model = await tf.loadGraphModel(MODEL_URL);
+  ```
+  
