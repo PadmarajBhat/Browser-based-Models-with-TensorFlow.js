@@ -55,14 +55,16 @@
      * both statements results in saving of the drawn image at html
   * rawImage = document.getElementById('canvasimg');
      * saves the html <img> to a variable.
-* ```
-var raw = tf.browser.fromPixels(rawImage,1);
+* 
+```var raw = tf.browser.fromPixels(rawImage,1);
     var resized = tf.image.resizeBilinear(raw, [28,28]);
     var tensor = resized.expandDims(0);
     
     var prediction = model.predict(tensor);
     var pIndex = tf.argMax(prediction, 1).dataSync();
 ```
+    
+    
     * first raw image is converted to tensor
     * resized to 28x28 ; canvas image will be of 280x280 dimension image and tf model takes 28x28
     * conv2d layer requires 3d input and hence **expandDims** does the magic for us.
@@ -99,7 +101,8 @@ var raw = tf.browser.fromPixels(rawImage,1);
   ``` const MODEL_URL = 'https://.../mobilenet/model.json';
       const model = await tf.loadGraphModel(MODEL_URL);
   ```
-  
+# Week 4
 * last part this week is amazing, there is web cam which collects the data at real time and uses the same for modelling.
 * rock paper sizler is given in as an example and in the exercise we are asked to include 2 more sets lizard and spock.
-* unfortunately, my pc is letting me install install tensorflow js for some security concerns.
+* unfortunately, my pc is letting me install install tensorflow js for some security concerns. However, it is not required here in this webcam based training.
+* when I trained with my hand for rock, paper and scissors, it detected succussfully for my wifes hand too. So it is clear that hair, finger size and lines in my hand were not considered for feature to detect the signs !!!!
