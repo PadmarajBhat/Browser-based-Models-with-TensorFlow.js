@@ -87,3 +87,9 @@ var raw = tf.browser.fromPixels(rawImage,1);
   * mobilenet: world famous shrinked image classifer for 1000 labels.
      * again simple CDN includes the model to browser : <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/mobilenet@1.0.0"> </script> 
      * a static image is loaded too the browser and that is sent to the loaded pretrained model to classify
+     
+* Saving the model to json:
+  * python program would have natural flow ( data ingestion, data wrangling , model building along with hyper parameter tuning)
+  * post that, using keras, model.save() is used to save in the local directory
+  * ```tensorflowjs_converter --input_format=keras {saved_model_path} ./``` is used to convert the model to json format in the current directory
+  * this will create a folder with multiple files in it. This has to be moved to the directly where the html file loads it.
